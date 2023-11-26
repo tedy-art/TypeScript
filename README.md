@@ -105,3 +105,40 @@ function myFunction() {
 </body>
 </html>
 ```
+
+### External JavaScript:
+Script can be placed in external files: 
+
+save file as a ```myScript.js```:
+```JS
+function myFunction(){
+    document.getElementById('demo').innerHTMl = "Paragraph Changed!"
+}
+```
+
+To use an external script, put the name of the script file in the src(source) attribute of  a ```<script>``` tag:
+
+Ex.
+```HTML
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Demo JS</title>
+</head>
+<body>
+    <p id="demo">A paragraph.</p>
+    <button type="button" onclick="myFunction()">Try it!</button>
+    <script src="myScript.js"></script>
+</body>
+</html>
+```
+
+### JavaScript Display Possibilites : 
+JavaScript can "display" data in different ways:
+
+- Writing into an HTML element, using ```innerHTML```.
+- Writing into the HTML output using ```document.write()```.
+- Writing into alert box, using `windows.alert()`.
+- Writing into browser console, using `console.log()`.
+
+
