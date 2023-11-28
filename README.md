@@ -142,3 +142,254 @@ JavaScript can "display" data in different ways:
 - Writing into browser console, using `console.log()`.
 
 
+### Using `innerHTML`:
+
+To access an HTML elements, JS can use the `document.getElementById(id)` method.
+
+Ex
+```HTML
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>My first web page</h1>
+        <p>My first paragraph</p>
+
+        <p id="demo"></p>
+        <script>
+            document.getElementById('demo').innerHTML = 5 + 6;
+        </script>
+    </body>
+</html>
+```
+
+output:
+
+<h1>My first web pages</h1>
+
+<p>My first paragraph</p>
+
+11
+
+### Using `document.write()`:
+
+Ex
+```HTML
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>My first web pages</h1>
+        <p>My first paragraph</p>
+
+        <script>
+            document.write(5 + 6);
+        </script>
+    </body>
+</html>
+```
+Output:
+
+<h1>My first web pages</h1>
+
+<p>My first paragraph</p>
+
+11
+
+### Using `window.alert()`:
+Ex
+```HTML
+<!DOCTYPE html>
+<html>
+    <head>
+        <body>
+            <h1>My first web pages</h1>
+            <p>My first paragraph</p>
+
+            <script>
+                window.alert(5 + 6)
+                // you can skip window
+            </script>
+        </body>
+    </head>
+</html>
+```
+
+### Using `console.log()`:
+```HTML
+<!DOCTYPE html>
+<html>
+    <head>
+        <body>
+            <h1>My first web pages</h1>
+            <p>My first paragraph</p>
+
+            <script>
+                console.log(5 + 6);
+            </script>
+        </body>
+    </head>
+</html>
+```
+
+### JavaScript Variables:
+
+#### variables are containers for Storing Data
+JS variable can be declare in 4 ways:
+
+-  Automatically
+- Using `var`
+- Using `let`
+- Using `const`
+
+### 1) Automatically :
+Ex.
+```HTML
+<!DOCTYPE html>
+<html>
+<body>
+    <p>In the example, x,y and z are undecleared.</p>
+    <p>They are automatically declared when first used.</p>
+
+    <p id="demo"></p>
+
+    <script>
+        x = 5;
+        y = 6;
+        z = x + y;
+        document.getElementById('demo').innerHTML = "The value of z is :" + z;
+    </script>
+</body>
+</html>
+```
+```
+In the example, x,y and z are undecleared.
+
+They are automatically declared when first used.
+
+The value of z is :11
+```
+
+### 2) Using `var`:
+
+```HTML
+<html>
+    <body>
+        <h1>JavaScript Variables</h1>
+
+        <p>In this example, x, y, and z are variables.</p>
+
+        <p id="demo"></p>
+
+        <script>
+            var x = 5;
+            var y = 6;
+            var z = x + y;
+            document.getElementById("demo").innerHTML =
+            "The value of z is: " + z;
+        </script>
+
+    </body>
+</html>
+```
+Output
+
+<h1>JavaScript Variables</h1>
+In this example, x, y, and z are variables.
+
+The value of z is: 11
+
+
+### 3) Using `let`:
+
+
+```HTML
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>JavaScript Variables</h1>
+
+        <p>In this example, x, y, and z are variables.</p>
+
+        <p id="demo"></p>
+
+        <script>
+            let x = 5;
+            let y = 6;
+            let z = x + y;
+            document.getElementById("demo").innerHTML = "The value of z is: " + z;
+        </script>
+
+    </body>
+</html>
+```
+
+Output:
+
+<h1>JavaScript Variables</h1>
+
+In this example, x, y, and z are variables.
+
+The value of z is: 11
+
+### Using `const`:
+```HTML
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>JavaScript Variables</h1>
+
+        <p>In this example, x, y, and z are variables.</p>
+
+        <p id="demo"></p>
+
+        <script>
+            const x = 5;
+            const y = 6;
+            const z = x + y;
+            document.getElementById("demo").innerHTML =
+            "The value of z is: " + z;
+        </script>
+
+    </body>
+</html>
+```
+Output:
+
+<h1>JavaScript Variables</h1>
+In this example, x, y, and z are variables.
+
+The value of z is: 11
+
+| Note                       |
+|-----------------------------|
+|The var keyword was used in all JavaScript code from 1995 to 2015.|
+|The let and const keywords were added to JavaScript in 2015.|
+|The var keyword should only be used in code written for older browsers.|
+
+### Mixed variable declaration :
+```HTML
+<!DOCTYPE html>
+<html>
+    <body>
+
+        <h1>JavaScript Variables</h1>
+
+        <p>In this example, price1, price2, and total are variables.</p>
+
+        <p id="demo"></p>
+
+        <script>
+            const price1 = 5;
+            const price2 = 6;
+            let total = price1 + price2;
+            document.getElementById("demo").innerHTML = "The total is: " + total;
+        </script>
+
+    </body>
+</html>
+```
+
+Output:
+<h1>JavaScript Variables</h1>
+<p>In this example, price1, price2, and total are variables.</p>
+
+The total is: 11
