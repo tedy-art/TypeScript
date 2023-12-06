@@ -393,3 +393,59 @@ Output:
 <p>In this example, price1, price2, and total are variables.</p>
 
 The total is: 11
+
+
+### JS `let` variables : 
+- The `let` keyword was introduced in ES6.
+- variable with declared with `let` have <b>Block Scope.</b>
+- variable declared with `let` must be <b>Declared</b> before use.
+- variable declared with `let` connot be <b>Redeclared</b> in the same scope
+
+**Block Scope**
+
+- Before ES6 (2015), JavaScript did not have Block Scope.
+
+- JavaScript had Global Scope and Function Scope.
+
+- ES6 introduced the two new JavaScript keywords: `let` and `const`.
+
+These two keywords provideed Block Scope in JavaScript
+
+#### Ex. variable declared inside a { } block be accessed from outside the block : 
+```JS
+{
+    let x = 2;
+}
+// x can NOT be used here
+```
+
+### Global Scope
+- variable declared with the `var` always have <b>Global Scope</b>.
+- variable declared with the `var` kayword can NOT have block scope.
+
+```JS
+{
+    var x = 2;
+}
+// x can be used here
+```
+
+### Cannot be Reclared
+- variable defined with `let` can not redeclared.
+- You can not accidentally redeclare a variable declared with let.
+
+`let` :
+```JS
+let x = "John Doe";
+
+let x = 0;
+```
+
+`var` :
+```JS
+var x = "John Doe";
+
+var x = 0;
+```
+
+### Redeclared Variables
