@@ -528,11 +528,56 @@ Output
 
 
 ## const :
-cannot do
-- Variables defined with const cannot be Redeclared
-
-- Variables defined with const cannot be Reassigned
 
 can do
-- Variables defined with const have Block Scope
+- Variables defined with const have Block Scope.
+
+cannot do
+- Variables defined with const cannot be Redeclared.
+
+- Variables defined with const cannot be Reassigned.
+
+
+#### `const` cannot be reassigned : 
+```HTML
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2>Const variable :</h2>
+        <p id="demo"></p>
+
+        <script>
+            try{
+                const PI = 3.141592653589793;
+                PI = 3.14;
+            }
+            catch(err){
+                document.getElementById("demo").innerHTML = err;
+            }
+        </script>
+    </body>
+</html>
+```
+Output
+<h2>Const variable :</h2>
+
+<p>TypeError: invalid assignment to const 'PI'</p>
+
+<br><br>
+
+#### Constant Objects and Arrays
+The keyword const is a little misleading.
+
+It does not define a constant value. It defines a constant reference to a value.
+
+Because of this you can NOT:
+
+- Reassign a constant value
+- Reassign a constant array
+- Reassign a constant object
+
+But you CAN:
+
+- Change the elements of constant array
+- Change the properties of constant object
 
