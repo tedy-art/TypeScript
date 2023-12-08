@@ -14,7 +14,7 @@
 | **Module 8: DOM Manipulation** | Selecting elements, modifying content, handling events        |
 
 # Basics OF JavaScript 
-### What is JavaScript??
+# What is JavaScript??
 - Java script is the world's most popular programming language.
 - Java Script is the programming language for web.
 - JS is easy to learn.
@@ -70,10 +70,10 @@ function myFunction() {
 </script>
 </head>
 <body>
-<h2>Demo JavaScript in Head</h2>
+    <h2>Demo JavaScript in Head</h2>
 
-<p id="demo">A Paragraph</p>
-<button type="button" onclick="myFunction()">Try it</button>
+    <p id="demo">A Paragraph</p>
+    <button type="button" onclick="myFunction()">Try it</button>
 
 </body>
 </html>
@@ -90,11 +90,11 @@ Example
 <html>
 <body>
 
-<h2>Demo JavaScript in Body</h2>
+    <h2>Demo JavaScript in Body</h2>
 
-<p id="demo">A Paragraph</p>
+    <p id="demo">A Paragraph</p>
 
-<button type="button" onclick="myFunction()">Try it</button>
+    <button type="button" onclick="myFunction()">Try it</button>
 
 <script>
 function myFunction() {
@@ -230,7 +230,7 @@ Ex
 </html>
 ```
 
-### JavaScript Variables:
+# JavaScript Variables:
 
 #### variables are containers for Storing Data
 JS variable can be declare in 4 ways:
@@ -581,3 +581,165 @@ But you CAN:
 - Change the elements of constant array
 - Change the properties of constant object
 
+#### Constant Array
+we can change the elements of a constent array :
+
+```HTML
+<!DOCTYPE html>
+<html>
+<body>
+
+    <h2>JavaScript const</h2>
+
+    <p>Declaring a constant array does NOT make the elements unchangeable:</p>
+
+    <p id="demo"></p>
+
+    <script>
+        // Create an Array:
+        const cars = ["Saab", "Volvo", "BMW"];
+
+        // Change an element:
+        cars[0] = "Toyota";
+
+        // Add an element:
+        cars.push("Audi");
+
+        // Display the Array:
+        document.getElementById("demo").innerHTML = cars; 
+    </script>
+
+</body>
+</html>
+```
+Output:
+
+<h2>JavaScript const</h2>
+<p>Declaring a constant array does NOT make the elements unchangeable:</p>
+
+<p>Toyota,Volvo,BMW,Audi</p>
+
+# Data Types
+JS has 8 datatypes:
+1) String
+2) Number
+3) Bigint
+4) Boolean
+5) Undefined
+6) Null
+7) Symbol
+8) Object
+
+The Object Datatype:
+the object data type contain:
+1) An object
+2) An Array
+3) A date
+
+|Example of data types|
+|---------------------|
+|// Numbers:</br>let length = 16;</br>let weight = 7.5;</br>|
+|// Strings:</br>let color = "Yellow";</br>let lastName = "Johnson";</br>|
+|// Booleans</br>let x = true;</br>let y = false;|
+|// Object:</br>const person = {firstName:"John", lastName:"Doe"};|
+|// Array object:</br>const cars = ["Saab", "Volvo", "BMW"];|
+|// Date object:</br>const date = new Date("2022-03-25");|
+
+### The Concept of Data Types
+- In programming, data types is an important concept.
+
+- To be able to operate on variables, it is important to know something about the type.
+
+|Note : When adding a number and a string, JavaScript will treat the number as a string.|
+|-|
+```HTML
+<!DOCTYPE html>
+<html>
+<body>
+
+    <h2>JavaScript</h2>
+
+    <p>When adding a number and a string, JavaScript will treat the number as a string.</p>
+
+    <p id="demo"></p>
+
+    <script>
+        let x = 16 + "Volvo"; // 16Volvo
+        // let x = "Volvo" + 16; O/P : Volvo16
+        // let x = 16 + 4 + "Volvo"; o/p: 20Volvo
+        // let x = "Volvo" + 16 + 4; o/p: Volvo164
+        document.getElementById("demo").innerHTML = x;
+    </script>
+
+</body>
+</html>
+```
+Output
+
+<h2>JavaScript</h2>
+<p>When adding a number and a string, JavaScript will treat the number as a string.</p>
+
+<p>16Volvo</p>
+
+
+### JavaScript Types are Dynamic
+- JavaScript has dynamic types. This means that the same variable can be used to hold different data types:
+
+```HTML
+<!DOCTYPE html>
+<html>
+<body>
+
+    <h2>JavaScript Data Types</h2>
+
+    <p>JavaScript has dynamic types. This means that the same variable can be used to hold different data types:</p>
+
+    <p id="demo"></p>
+
+    <script>
+        let x;         // Now x is undefined
+        x = 5;         // Now x is a Number
+        x = "John";    // Now x is a String
+
+        document.getElementById("demo").innerHTML = x;
+    </script>
+
+</body>
+</html>
+```
+
+### Strings
+- A string (or a text string) is a series of characters like "John Doe".
+
+- Strings are written with quotes. 
+
+You can use single or double quotes:
+```HTML
+<!DOCTYPE html>
+<html>
+<body>
+
+    <h2>JavaScript Strings</h2>
+
+    <p>Strings are written with quotes. You can use single or double quotes:</p>
+
+    <p id="demo"></p>
+
+    <script>
+        let carName1 = "Volvo XC60"; # Double quotes
+        let carName2 = 'Volvo XC60'; # Single quotes
+
+        document.getElementById("demo").innerHTML = carName1 + "<br>" + carName2; 
+    </script>
+
+</body>
+</html>
+```
+Output:
+<h2>JavaScript Strings</h2>
+Strings are written with quotes. You can use single or double quotes:
+
+Volvo XC60
+Volvo XC60
+
+### Numbers
