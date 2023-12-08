@@ -738,8 +738,8 @@ You can use single or double quotes:
 Output:
 <h2>JavaScript Strings</h2>
 Strings are written with quotes. You can use single or double quotes:
-
-Volvo XC60
-Volvo XC60
+</br>
+Volvo XC60</br>
+Volvo XC60</br>
 
 ### Numbers
