@@ -743,3 +743,165 @@ Volvo XC60</br>
 Volvo XC60</br>
 
 ### Numbers
+- All JS numbers are stored as decimal numbers(floating point).
+- Numbers can be written with, or without decimals:
+
+```HTML
+<!DOCTYPE html>
+<html>
+<body>
+
+    <h2>JavaScript Numbers</h2>
+
+    <p>Numbers can be written with, or without decimals:</p>
+
+    <p id="demo"></p>
+
+    <script>
+        let x1 = 34.00;
+        let x2 = 34;
+        let x3 = 3.14;
+
+        document.getElementById("demo").innerHTML = x1 + "<br>" + x2 + "<br>" + x3;
+    </script>
+
+</body>
+</html>
+```
+Output:
+<h2>JavaScript Numbers</h2>
+Numbers can be written with, or without decimals:
+
+34</br>
+34</br>
+3.14</br>
+
+### Exponential Notation
+- Extra large or extra small numbers can be written with scientic (exponential) notation : 
+
+```HTML
+<!DOCTYPE html>
+<html>
+<body>
+
+    <h2>JavaScript Numbers</h2>
+
+    <p>Extra large or extra small numbers can be written with scientific (exponential) notation:</p>
+
+    <p id="demo"></p>
+
+    <script>
+        let y = 123e5;
+        let z = 123e-5;
+
+        document.getElementById("demo").innerHTML = y + "<br>" + z;
+    </script>
+
+</body>
+</html>
+```
+Output
+<h1>JavaScript Numbers</h1>
+Extra large or extra small numbers can be written with scientific (exponential) notation:
+</br></br>
+12300000</br>
+0.00123</br>
+
+### BigInt
+- All JS numbers are stored in a 64-bit floating-point format.
+- JS Bigint introduce in ES2020.
+- store too big number or too small number
+
+```HTML
+<!DOCTYPE html>
+<html>
+<body>
+    <h1>JavScript Bigint</h1>
+    <p>A BigInt can not have decimals.</p>
+
+    <p id="demo"></p>
+
+    <p>You cannot perform math between a BigInt type and a Number type.</p>
+
+    <script>
+        let x = BigInt("123456789012345678901234567890");
+        document.getElementById("demo").innerHTML = x; 
+    </script>
+
+</body>
+</html>
+```
+Output:
+<h1>JavScript Bigint</h1>
+A BigInt can not have decimals.</br>
+</br>
+123456789012345678901234567890
+</br></br>
+You cannot perform math between a BigInt type and a Number type.
+
+### Booleans
+- Booleans can only have two values: true or false.
+
+```HTML
+<!DOCTYPE html>
+<html>
+<body>
+
+    <h2>JavaScript Booleans</h2>
+
+    <p>Booleans can have two values: true or false:</p>
+
+    <p id="demo"></p>
+
+    <script>
+        let x = 5;
+        let y = 5;
+        let z = 6;
+
+        document.getElementById("demo").innerHTML = (x == y) + "<br>" + (x == z);
+    </script>
+
+</body>
+</html>
+```
+Output:
+<h2>JavaScript Booleans</h2><br>
+Booleans can have two values: true or false:
+</br>
+true</br>
+false</br>
+
+### Arrays
+- JavaScript arrays are written with square brackets.
+
+- Array items are separated by commas.
+
+- The following code declares (creates) an array called `cars`.
+
+containing three items (car names):
+```HTML
+<!DOCTYPE html>
+<html>
+<body>
+
+    <h2>JavaScript Arrays</h2>
+
+    <p>Array indexes are zero-based, which means the first item is [0].</p>
+
+    <p id="demo"></p>
+
+    <script>
+        const cars = ["Saab","Volvo","BMW"];
+
+        document.getElementById("demo").innerHTML = cars[0];
+    </script>
+
+</body>
+</html>
+```
+Output:
+<h2>JavaScript Arrays</h2>
+Array indexes are zero-based, which means the first item is [0].
+</br></br>
+Saab
+
