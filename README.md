@@ -905,3 +905,508 @@ Array indexes are zero-based, which means the first item is [0].
 </br></br>
 Saab
 
+### Objects:
+- JavaScript objects are written with curly braces {}.
+
+- Object properties are written as name:value pairs, separated by commas.
+
+```HTML
+<!DOCTYPE html>
+<html>
+<body>
+
+    <h2>JavaScript Objects</h2>
+
+    <p id="demo"></p>
+
+    <script>
+        const person = {
+            firstName : "John",
+            lastName  : "Doe",
+            age     : 50,
+            eyeColor  : "blue"
+        };
+
+        document.getElementById("demo").innerHTML = person.firstName + " is " + person.age + " years old.";
+    </script>
+
+</body>
+</html>
+```
+Output:
+<h2>JavaScript Objects</h2>
+John is 50 years old.
+
+
+</br></br>
+# JavaScript Operators
+
+#### Types of JavaScript Operators
+- There are different types of JavaScript operators:
+
+1) Arithmetic Operators
+2) Assignment Operators
+3) Comparison Operators
+4) String Operators
+5) Logical Operators
+6) Bitwise Operators
+7) Ternary Operators
+8) Type Operators
+
+## 1) Arithmetic Operators
+| Sr |Operator |	Description|
+|-|-|-|
+| 1 | + | Addition |
+| 2 | -	| Subtraction|
+| 3 | *	| Multiplication|
+| 4 | **| Exponentiation (ES2016)|
+| 5 | /	| Division|
+| 6 | %	| Modulus (Division Remainder)|
+| 7 |++	| Increment|
+| 8 | --| Decrement|
+
+- JavaScript supports various arithmetic operations, allowing you to perform calculations on numeric values.
+- Here are the basic arithmetic operators in JavaScript:
+
+1. **Addition (`+`):**
+   - Adds two values together.
+
+   ```javascript
+   let sum = 5 + 3; // Result: 8
+   ```
+
+2. **Subtraction (`-`):**
+   - Subtracts the right operand from the left operand.
+
+   ```javascript
+   let difference = 10 - 4; // Result: 6
+   ```
+
+3. **Multiplication (`*`):**
+   - Multiplies two values.
+
+   ```javascript
+   let product = 2 * 6; // Result: 12
+   ```
+
+4. **Division (`/`):**
+   - Divides the left operand by the right operand.
+
+   ```javascript
+   let quotient = 8 / 2; // Result: 4
+   ```
+
+5. **Remainder (`%`):**
+   - Returns the remainder of the division of the left operand by the right operand.
+
+   ```javascript
+   let remainder = 10 % 3; // Result: 1
+   ```
+
+6. **Exponentiation (`**`):**
+   - Raises the left operand to the power of the right operand.
+
+   ```javascript
+   let power = 2 ** 3; // Result: 8
+   ```
+
+7. **Increment (`++`):**
+   - Increases the value of a variable by 1.
+
+   ```javascript
+   let counter = 5;
+   counter++; // Equivalent to counter = counter + 1;
+   // Now, counter is 6
+   ```
+
+8. **Decrement (`--`):**
+   - Decreases the value of a variable by 1.
+
+   ```javascript
+   let countDown = 10;
+   countDown--; // Equivalent to countDown = countDown - 1;
+   // Now, countDown is 9
+   ```
+
+
+## 2) Assignment Operators
+- Assignment operators assign values to JavaScript variables.
+
+|Operator |	Example |	Same As   |
+|---------|---------|-------------|
+| =	      |x = y    |	x = y     |
+|+=	      |x += y   |	x = x + y |
+|-=	      |x -= y   |    x = x - y|
+|*=	      |x *= y   |	x = x * y |
+|/=	      |x /= y   |	x = x / y |
+|%=	      |x %= y   |	x = x % y |
+|**=      |	x **= y |	x = x ** y|
+
+1. **Assignment (`=`):**
+   - Assigns the value on the right to the variable on the left.
+
+   ```javascript
+   let x = 10; // x is assigned the value 10
+   ```
+
+2. **Addition Assignment (`+=`):**
+   - Adds the value on the right to the current value of the variable on the left.
+
+   ```javascript
+   let y = 5;
+   y += 3; // Equivalent to y = y + 3
+   // Now, y is 8
+   ```
+
+3. **Subtraction Assignment (`-=`):**
+   - Subtracts the value on the right from the current value of the variable on the left.
+
+   ```javascript
+   let z = 10;
+   z -= 4; // Equivalent to z = z - 4
+   // Now, z is 6
+   ```
+
+4. **Multiplication Assignment (`*=`):**
+   - Multiplies the current value of the variable on the left by the value on the right.
+
+   ```javascript
+   let a = 2;
+   a *= 3; // Equivalent to a = a * 3
+   // Now, a is 6
+   ```
+
+5. **Division Assignment (`/=`):**
+   - Divides the current value of the variable on the left by the value on the right.
+
+   ```javascript
+   let b = 20;
+   b /= 4; // Equivalent to b = b / 4
+   // Now, b is 5
+   ```
+
+6. **Remainder Assignment (`%=`):**
+   - Assigns the remainder of the division of the current value of the variable on the left by the value on the right.
+
+   ```javascript
+   let c = 13;
+   c %= 5; // Equivalent to c = c % 5
+   // Now, c is 3
+   ```
+
+7. **Exponentiation Assignment (`**=`):**
+   - Raises the current value of the variable on the left to the power of the value on the right.
+
+   ```javascript
+   let d = 2;
+   d **= 3; // Equivalent to d = d ** 3
+   // Now, d is 8
+   ```
+
+# 3) Comparison Operators:
+
+| Operator  |	Description                    |
+|-----------|----------------------------------|
+| ==	    | equal to                         |
+| ===	    | equal value and equal type       |
+| !=	    | not equal                        |
+| !==	    | not equal value or not equal type|
+| >	        | greater than                     |
+| <	        |less than                         |
+| >=        |	greater than or equal to       |
+| <=        |	less than or equal to          |
+| ?	        |ternary operator                  |
+
+- Comparison operators in JavaScript are used to compare two values and return a Boolean result (either `true` or `false`). 
+- These operators are commonly used in conditional statements and expressions. 
+
+Here are the basic comparison operators:
+
+1. **Equal (`==`):**
+   - Checks if two values are equal, performing type coercion if the operands are of different types.
+
+   ```javascript
+   let a = 5;
+   let b = "5";
+   console.log(a == b); // true (value equality is checked, type coercion is performed)
+   ```
+
+2. **Not Equal (`!=`):**
+   - Checks if two values are not equal, performing type coercion if the operands are of different types.
+
+   ```javascript
+   let a = 5;
+   let b = "5";
+   console.log(a != b); // false (value equality is checked, type coercion is performed)
+   ```
+
+3. **Strict Equal (`===`):**
+   - Checks if two values are equal without performing type coercion. Both value and type must be the same.
+
+   ```javascript
+   let a = 5;
+   let b = "5";
+   console.log(a === b); // false (value and type are different)
+   ```
+
+4. **Strict Not Equal (`!==`):**
+   - Checks if two values are not equal without performing type coercion. Both value and type must be different.
+
+   ```javascript
+   let a = 5;
+   let b = "5";
+   console.log(a !== b); // true (value and/or type are different)
+   ```
+
+5. **Greater Than (`>`):**
+   - Checks if the left operand is greater than the right operand.
+
+   ```javascript
+   let x = 10;
+   let y = 5;
+   console.log(x > y); // true
+   ```
+
+6. **Less Than (`<`):**
+   - Checks if the left operand is less than the right operand.
+
+   ```javascript
+   let x = 10;
+   let y = 15;
+   console.log(x < y); // true
+   ```
+
+7. **Greater Than or Equal To (`>=`):**
+   - Checks if the left operand is greater than or equal to the right operand.
+
+   ```javascript
+   let p = 10;
+   let q = 10;
+   console.log(p >= q); // true
+   ```
+
+8. **Less Than or Equal To (`<=`):**
+   - Checks if the left operand is less than or equal to the right operand.
+
+   ```javascript
+   let p = 10;
+   let q = 15;
+   console.log(p <= q); // true
+   ```
+
+# 4) String Comparison
+All the comparison operators above can also be used on strings:
+
+Ex
+```HTML
+<!DOCTYPE html>
+<html>
+<body>
+
+    <h1>JavaScript String Operators</h1>
+
+    <p>All conditional operators can be used on both numbers and strings.</p>
+
+    <p id="demo"></p>
+
+    <script>
+        let text1 = "A";
+        let text2 = "B";
+        let result = text1 < text2;
+        document.getElementById("demo").innerHTML = "Is A less than B? " + result; 
+        // Note that strings are compared alphabetically
+    </script>
+
+</body>
+</html>
+```
+Output
+
+<h1>JavaScript String Operators</h1>
+
+All conditional operators can be used on both numbers and strings.
+
+Is A less than B? true
+
+# 4) Logical Operators
+
+| Operator |	Description  |
+|----------|-----------------|
+|   &&     |	logical and  |
+|   &#124;&#124; |logical or   |
+|   !	   | logical not     |
+
+- Logical operators in programming are used to perform logical operations on boolean values.
+- These operators help in combining or manipulating boolean values to make decisions in a program.
+- In JavaScript, there are three main logical operators:
+ 1) AND (`&&`), 
+ 2) OR (`||`), 
+ 3) NOT (`!`).
+
+1. **Logical AND (`&&`):**
+   - The `&&` operator returns `true` if both operands are `true`. Otherwise, it returns `false`.
+
+   ```javascript
+   let x = true;
+   let y = false;
+   console.log(x && y); // Output: false
+   ```
+
+2. **Logical OR (`||`):**
+   - The `||` operator returns `true` if at least one of the operands is `true`. It returns `false` if both operands are `false`.
+
+   ```javascript
+   let a = true;
+   let b = false;
+   console.log(a || b); // Output: true
+   ```
+
+3. **Logical NOT (`!`):**
+   - The `!` operator negates the boolean value of its operand. If the operand is `true`, it returns `false`, and vice versa.
+
+   ```javascript
+   let p = true;
+   console.log(!p); // Output: false
+   ```
+
+**Examples with Expressions:**
+```javascript
+let age = 25;
+let isStudent = false;
+
+// Using AND (&&)
+if (age > 18 && !isStudent) {
+  console.log("You are an adult and not a student.");
+} else {
+  console.log("You may be under 18 or a student.");
+}
+
+// Using OR (||)
+if (age < 13 || age >= 65) {
+  console.log("You get a special discount.");
+} else {
+  console.log("You don't qualify for a special discount.");
+}
+```
+
+- In the above examples, logical operators are used to create conditions based on boolean values.
+- They are commonly used in decision-making structures like `if` statements, loops, and more, to control the flow of a program based on certain conditions.
+
+# 5) Type Operators
+| Operator   |	Description |
+|-|-|
+| typeof     |	Returns the type of a variable |
+| instanceof | 	Returns true if an object is an instance of an object type |
+
+In JavaScript, the `typeof` operator is commonly used to determine the type of a value or variable. It returns a string representing the data type of the operand. Here's how you can use the `typeof` operator:
+
+```javascript
+let num = 42;
+let str = "Hello, World!";
+let bool = true;
+let arr = [1, 2, 3];
+let obj = { key: "value" };
+let func = function() { };
+
+console.log(typeof num);  // Output: "number"
+console.log(typeof str);  // Output: "string"
+console.log(typeof bool); // Output: "boolean"
+console.log(typeof arr);  // Output: "object"
+console.log(typeof obj);  // Output: "object"
+console.log(typeof func); // Output: "function"
+```
+
+Some important points about the `typeof` operator:
+
+- It returns a string indicating the type of the operand.
+- The types returned include `number`, `string`, `boolean`, `object`, `function` and `undefined`.
+- It's important to note that the type of an array is considered "object." If you need to specifically check for an array, you might use other methods like `Array.isArray()`.
+
+In addition to `typeof`, JavaScript also has the `instanceof` operator, which is used to check whether an object is an instance of a particular class or constructor. This is often used for checking whether an object is an instance of a specific type or class. Here's an example:
+
+```javascript
+class Animal { }
+let cat = new Animal();
+
+console.log(cat instanceof Animal); // Output: true
+console.log(cat instanceof Object); // Output: true (all objects are instances of Object)
+```
+
+In this example, `cat instanceof Animal` returns `true` because `cat` is an instance of the `Animal` class.
+
+# 6) Bitwise Operators
+Bit operators work on 32 bits numbers.
+Any numeric operand in the operation is converted into a 32 bit number. The result is converted back to a JavaScript number.
+
+|Operator |	Description           |	Example |	Same as   |	Result |	Decimal|
+|---------|-----------------------|---------|-------------|--------|-----------|
+| &       |  AND                  | 5 & 1	| 0101 & 0001 |	0001   |  1        |
+| &#124;  |	 OR	                  | 5 &#124; 1|0101 &#124; 0001 |0101|  5|
+| ~	      |  NOT	              | ~ 5	    | ~0101	      |	1010   |  10       |
+| ^	      |  XOR	              | 5 ^ 1   | 0101 ^ 0001 |	0100   |  4        |
+| <<	  |  left shift	          | 5 << 1  | 0101 << 1	  | 1010   |  10       |
+| >>	  |  right shift	      | 5 >> 1  | 0101 >> 1	  | 0010   |  2        |
+| >>>	  |  unsigned right shift |	5 >>> 1 | 0101 >>> 1  |	0010   |  2        |
+
+- Bitwise operators in JavaScript perform operations on the individual bits of integers.
+- These operators treat their operands as a sequence of 32 bits (or 64 bits in the case of `BigInt`), rather than as decimal, hexadecimal, or octal numbers.
+
+Here are the bitwise operators available in JavaScript:
+
+1. **Bitwise AND (`&`):**
+   - Performs a bitwise AND operation on each pair of corresponding bits. If both bits are 1, the result is 1; otherwise, it's 0.
+
+   ```javascript
+   let result = 5 & 3; // Binary: 0101 & 0011
+   console.log(result); // Output: 1
+   ```
+
+2. **Bitwise OR (`|`):**
+   - Performs a bitwise OR operation on each pair of corresponding bits. If at least one bit is 1, the result is 1; otherwise, it's 0.
+
+   ```javascript
+   let result = 5 | 3; // Binary: 0101 | 0011
+   console.log(result); // Output: 7
+   ```
+
+3. **Bitwise XOR (`^`):**
+   - Performs a bitwise XOR (exclusive OR) operation on each pair of corresponding bits. If the bits are different, the result is 1; otherwise, it's 0.
+
+   ```javascript
+   let result = 5 ^ 3; // Binary: 0101 ^ 0011
+   console.log(result); // Output: 6
+   ```
+
+4. **Bitwise NOT (`~`):**
+   - Inverts each bit of its operand. It changes 1 to 0 and 0 to 1.
+
+   ```javascript
+   let result = ~5; // Binary: ~0101
+   console.log(result); // Output: -6
+   ```
+
+5. **Left Shift (`<<`):**
+   - Shifts the bits of the left operand to the left by the number of positions specified by the right operand. The vacant positions are filled with zeros.
+
+   ```javascript
+   let result = 5 << 2; // Binary: 0101 << 2
+   console.log(result); // Output: 20
+   ```
+
+6. **Sign-propagating Right Shift (`>>`):**
+   - Shifts the bits of the left operand to the right by the number of positions specified by the right operand. The vacant positions are filled with the sign bit (0 for positive numbers, 1 for negative numbers).
+
+   ```javascript
+   let result = -5 >> 1; // Binary: -0101 >> 1
+   console.log(result); // Output: -3
+   ```
+
+7. **Zero-fill Right Shift (`>>>`):**
+   - Similar to the sign-propagating right shift, but the vacant positions are filled with zeros.
+
+   ```javascript
+   let result = -5 >>> 1; // Binary: -0101 >>> 1
+   console.log(result); // Output: 2147483645
+   ```
+
+Bitwise operators are commonly used in scenarios where direct manipulation of bits is required, such as certain low-level operations or optimizations. They may not be as commonly used in everyday programming compared to other operators.
