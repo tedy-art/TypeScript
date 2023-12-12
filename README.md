@@ -13,7 +13,8 @@
 | **Module 7: Asynchronous JavaScript** | Callbacks, Promises, async/await                            |
 | **Module 8: DOM Manipulation** | Selecting elements, modifying content, handling events        |
 
-# Basics OF JavaScript 
+# **Module 1: Basics**
+
 # What is JavaScript??
 - Java script is the world's most popular programming language.
 - Java Script is the programming language for web.
@@ -1410,3 +1411,414 @@ Here are the bitwise operators available in JavaScript:
    ```
 
 Bitwise operators are commonly used in scenarios where direct manipulation of bits is required, such as certain low-level operations or optimizations. They may not be as commonly used in everyday programming compared to other operators.
+
+# **Module 2: Control Flow**
+1) Conditional statements
+2) loops
+3) switch statements
+
+## 1) Conitional Statement : 
+Conditional statements in JavaScript are used to make decisions in your code. They allow you to execute different blocks of code based on whether a specified condition evaluates to true or false. 
+
+1. `if` Statement
+2. `else if` Statement
+3. Ternary Operator (`? `)
+4. Switch Statement
+
+#### 1. `if` Statement:
+
+The basic syntax of an `if` statement is as follows:
+
+```javascript
+if (condition) {
+  // Code to be executed if the condition is true
+} else {
+  // Code to be executed if the condition is false
+}
+```
+
+Example:
+
+```javascript
+let x = 10;
+
+if (x > 5) {
+  console.log("x is greater than 5");
+} else {
+  console.log("x is not greater than 5");
+}
+```
+
+#### 2. `else if` Statement:
+
+You can use the `else if` statement to test additional conditions if the initial `if` condition is false:
+
+```javascript
+let grade = 75;
+
+if (grade >= 90) {
+  console.log("A");
+} else if (grade >= 80) {
+  console.log("B");
+} else if (grade >= 70) {
+  console.log("C");
+} else {
+  console.log("Fail");
+}
+```
+
+#### 3. Ternary Operator (`? `):
+
+The ternary operator provides a concise way to write simple `if-else` statements in a single line:
+
+```javascript
+let result = (condition) ? "True" : "False";
+```
+
+Example:
+
+```javascript
+let age = 20;
+let message = (age >= 18) ? "You are an adult" : "You are not an adult";
+console.log(message);
+```
+
+#### 4. Switch Statement:
+
+The `switch` statement is used for multiple branching. It's especially useful when you need to compare a single value against multiple possible values:
+
+```javascript
+let day = "Monday";
+
+switch (day) {
+  case "Monday":
+    console.log("It's the start of the week");
+    break;
+  case "Friday":
+    console.log("TGIF!");
+    break;
+  default:
+    console.log("It's a regular day");
+}
+```
+
+Conditional statements are fundamental for controlling the flow of your program based on certain conditions. They allow your code to make decisions dynamically, enabling you to create more flexible and responsive applications.
+
+## 2) loops
+In JavaScript, loops are used to repeatedly execute a block of code until a specified condition is met. There are several types of loops available, and each serves a different purpose. Here are the main types of loops in JavaScript:
+
+1. `for` Loop
+2. `while` Loop
+3. `do...while` Loop
+4. `for...in` Loop
+5. `for...of` Loop
+
+#### 1. `for` Loop:
+
+The `for` loop is used when you know the number of iterations you want to perform.
+
+```javascript
+for (initialization; condition; iteration) {
+  // Code to be repeated
+}
+```
+
+Example:
+
+```javascript
+for (let i = 0; i < 5; i++) {
+  console.log(i);
+}
+```
+
+#### 2. `while` Loop:
+
+The `while` loop is used when you don't know the number of iterations beforehand, and the loop continues as long as the specified condition is true.
+
+```javascript
+while (condition) {
+  // Code to be repeated
+}
+```
+
+Example:
+
+```javascript
+let i = 0;
+while (i < 5) {
+  console.log(i);
+  i++;
+}
+```
+
+#### 3. `do...while` Loop:
+
+The `do...while` loop is similar to the `while` loop, but it always executes the block of code at least once before checking the condition.
+
+```javascript
+do {
+  // Code to be repeated
+} while (condition);
+```
+
+Example:
+```javascript
+let i = 0;
+
+do {
+  console.log("Current value of i: " + i);
+  i++;
+} while (i < 5);
+```
+
+Output:
+
+```
+Current value of i: 0
+Current value of i: 1
+Current value of i: 2
+Current value of i: 3
+Current value of i: 4
+```
+
+- In this example, 
+    - the `do...while` loop executes the code block at least once, and then it checks the condition (`i < 5`). 
+    - As long as the condition is true, the loop continues to execute, incrementing the value of `i` and printing its current value. 
+    - The loop stops when the condition becomes false (`i` reaches 5).
+
+#### 4. `for...in` Loop:
+
+The `for...in` loop in JavaScript is used to iterate over the properties of an object.
+
+```javascript
+for (variable in object) {
+  // Code to be repeated
+}
+```
+
+Example:
+```javascript
+let person = {
+  name: "John",
+  age: 30,
+  job: "developer"
+};
+
+for (let key in person) {
+  console.log(key + ": " + person[key]);
+}
+```
+Output:
+```
+name: John
+age: 30
+job: developer
+```
+
+- In this example,
+    - the `for...in` loop iterates over the properties of the `person` object. 
+    - For each iteration, the variable `key` takes on the name of a property, and `person[key]` retrieves the value associated with that property. 
+    - The loop then logs the property name and its corresponding value to the console.
+
+#### 5. `for...of` Loop:
+
+The `for...of` loop is used to iterate over iterable objects (arrays, strings, etc.).
+
+```javascript
+for (variable of iterable) {
+  // Code to be repeated
+}
+```
+
+Example:
+
+```javascript
+let colors = ["red", "green", "blue"];
+
+for (let color of colors) {
+  console.log(color);
+}
+```
+
+Output:
+
+```
+red
+green
+blue
+```
+
+- In this example, 
+    - the `for...of` loop iterates over the elements of the `colors` array.
+    - For each iteration, the variable `color` takes on the value of the current element, and the loop logs that value to the console.
+
+You can also use `for...of` with other iterable objects, such as strings:
+
+```javascript
+let message = "Hello";
+
+for (let char of message) {
+  console.log(char);
+}
+```
+
+Output:
+
+```
+H
+e
+l
+l
+o
+```
+
+- In this case,
+    - the `for...of` loop iterates over the characters of the string and logs each character to the console.
+
+## 3) switch statements
+A `switch` statement in JavaScript provides a way to make decisions based on the value of an expression. It's a convenient alternative to a series of `if...else if...else` statements when you need to compare a single value against multiple possible values. 
+
+Here's the basic syntax of a `switch` statement:
+
+```javascript
+switch (expression) {
+  case value1:
+    // Code to be executed if expression === value1
+    break;
+  case value2:
+    // Code to be executed if expression === value2
+    break;
+  // additional cases as needed
+  default:
+    // Code to be executed if none of the cases match
+}
+```
+
+Here's an example of a `switch` statement along with its output:
+
+```javascript
+let day = "Monday";
+
+switch (day) {
+  case "Monday":
+    console.log("It's the start of the week");
+    break;
+  case "Friday":
+    console.log("TGIF!");
+    break;
+  default:
+    console.log("It's a regular day");
+}
+```
+
+Output:
+
+```
+It's the start of the week
+```
+
+- In this example, 
+    - the `switch` statement evaluates the value of the `day` variable. 
+    - If the value matches any of the specified cases, the corresponding code block is executed. 
+    - If none of the cases match, the `default` block is executed.
+
+You can have as many cases as needed, and each case should end with a `break` statement to prevent fall-through (i.e., continuing to the next case). The `default` case is optional and is executed if none of the cases match.
+
+Examples of switch statement:
+Certainly! Here are a few more examples of `switch` statements:
+
+### Example 1: Checking Day of the Week
+
+```javascript
+let dayOfWeek = 3;
+let dayName;
+
+switch (dayOfWeek) {
+  case 1:
+    dayName = "Sunday";
+    break;
+  case 2:
+    dayName = "Monday";
+    break;
+  case 3:
+    dayName = "Tuesday";
+    break;
+  case 4:
+    dayName = "Wednesday";
+    break;
+  case 5:
+    dayName = "Thursday";
+    break;
+  case 6:
+    dayName = "Friday";
+    break;
+  case 7:
+    dayName = "Saturday";
+    break;
+  default:
+    dayName = "Invalid day";
+}
+
+console.log("Today is " + dayName);
+```
+Output
+```
+Today is Tuesday
+```
+
+### Example 2: Grading System
+
+```javascript
+let score = 85;
+let grade;
+
+switch (true) {
+  case score >= 90:
+    grade = "A";
+    break;
+  case score >= 80:
+    grade = "B";
+    break;
+  case score >= 70:
+    grade = "C";
+    break;
+  case score >= 60:
+    grade = "D";
+    break;
+  default:
+    grade = "F";
+}
+
+console.log("Your grade is " + grade);
+```
+Output:
+```
+Your grade is B
+```
+
+### Example 3: Checking Type
+
+```javascript
+let value = "Hello";
+let type;
+
+switch (typeof value) {
+  case "number":
+    type = "Number";
+    break;
+  case "string":
+    type = "String";
+    break;
+  case "boolean":
+    type = "Boolean";
+    break;
+  default:
+    type = "Other";
+}
+
+console.log("The type of value is " + type);
+```
+Output:
+```
+The type of value is String
+```
