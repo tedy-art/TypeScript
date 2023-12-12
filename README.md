@@ -1822,3 +1822,8 @@ Output:
 ```
 The type of value is String
 ```
+
+# **Module 3: Functions**   
+1. Declaring functions
+2. function expressions
+3. arrow functions      
