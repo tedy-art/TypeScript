@@ -1824,6 +1824,30 @@ The type of value is String
 ```
 
 # **Module 3: Functions**   
+- A javascript function is a block of code designed to perform a particular task.
+- Functions can be declared using the function keyword followed by the function name and parameters.
+
 1. Declaring functions
 2. function expressions
-3. arrow functions      
+3. arrow functions
+
+
+## 1) Declaring function:
+
+Syntax:
+```javascript
+function name_of_function(){
+  // function body
+}
+```
+#### define a function
+Example:
+```javascript
+function greet(){
+  console.log("Hello world!");
+}
+```
+#### Calling a function
+```javascript
+greet();
+```
