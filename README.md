@@ -103,3 +103,65 @@
 |2| Runtime Schemas w/Zod|
 |3| Route and Query Parameters|
 |4| Routers and Middlewares|
+
+<hr><hr>
+**1) Lexical Structue**
+
+1) Lexical structure refers to the way in which instructions are written in the programming code.
+
+2) It is pivtol to follow a precise and orderly structure so that the instructions are correctly understood by the machine.
+
+3) This includes elements such as tokens, whitescope, comments, case sencivity, and other features.
+
+*tokens :*
+
+token are the building block of programming language.
+
+tokens are :<br>
+    1) Reserved Keyword<br>
+    2) Identifiers<br>
+    3) Operators(i.e.arithmetic)<br>
+    4) Literals(text)<br>
+    5) Punctuation symbols<br>
+
+*Whitespaces & comments:*<br>
+
+1) // This is single line comments
+2) /* this is multiline comments */
+
+*Reserved Keyword :*
+
+Reserved Keywords connot be used as identifiers for variable and function. after all, they are reserved.
+
+*keyoword :*
+
+1) const, var, let
+2) if, else, switch, case, default
+3) for, while, do, break
+4) function, return
+
+*Operators :*
+
+1) arithmetic ;- [+, -, *, /, %]
+2) Assignment - [=, +=, *=, /=, -=]
+3) Comparison - [==, ===, !=, !==, >, <, >=, <=]
+
+Variable declaration Keyword:
+1) var-<br>
+
+Declare a variable with function or a global scope, and it can be re-assigned.
+
+2) let-<br>
+
+1) Declare variable with block scope that can be re-assigned.
+    
+2) we do not use var very much because of it's scoping features.
+
+3) if variable is declare in global scope sometimes it will give us an errors.
+
+3) const-<br>
+
+Declares a constant variable with a value that cannot be re-assigned.
+
+
+**Data Types :**
