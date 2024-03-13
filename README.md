@@ -20,6 +20,11 @@
 - Java Script is the programming language for web.
 - JS is easy to learn.
 
+# **Comments In JS**
+- // single line comments
+- /* This is multiline comments */
+
+
 ### Why study JavaScript ??
 JavaScript one of the 3 language all web developer <i>must</i> learn : 
 1) HTML - To define the content of the web pages.
