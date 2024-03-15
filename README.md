@@ -229,3 +229,37 @@ let num3 = 10;
 console.log(num1 == num2); // true
 console.log(num2 == num3); // false
 ```
+
+*5) Undefined* = Variable without a value has the value `undefined`, The type is also `undefined`.
+
+```JavaScript
+let name; 
+console.log(name); // Undefined
+```
+
+*6) Null* = Null is a speacial value that represent an empty or unknown values.
+
+```JavaScript
+let name = null;
+console.log(name); // JS = Null, TS= Undefined 
+```
+
+*7) Symbol* = The JS ES6 introducted a new primitive data type called `symbol`.
+
+    Symbols are immutable(Connot change) and are unique.
+
+```JavaScript
+const value1 = Symbol('hello');
+const value2 = Symbol('hello');
+console.log(value1 === value2); //false
+```
+
+*8) Object* = Js Objects are written with curly {} braces.
+
+    object properties are written as name:values pairs, separated by commas.
+
+```JavaScript
+const person = {firstName:'John', lastName: 'Doe', age: 50, eyeColor: 'blue'};
+console.log(person); // {firstName:'John', lastName: 'Doe', age: 50, eyeColor: 'blue'}
+```
+
