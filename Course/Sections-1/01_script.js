@@ -19,4 +19,4 @@ y;
 */
 const z = 5;
 z = 10; // it will give us an error
-z;
+z; 
