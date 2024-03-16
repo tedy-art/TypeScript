@@ -25,9 +25,11 @@ str2;
 const positive = 154;
 const negative = -154;
 const decimal = 154.7;
+const hugeNumber = 5000;
 positive;
 negative;
 decimal;
+hugeNumber;
 
 
 // Bigint = all JS numbers are stored in 64-bi floating-point format.
