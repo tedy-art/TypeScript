@@ -265,6 +265,135 @@ console.log(person); // {firstName:'John', lastName: 'Doe', age: 50, eyeColor: '
 
 # Operators:
 
-**Arithmetic Operator :**(+, -, *, /, %, **)
+**Arithmetic Operator :**(`+`, `-`, `*`, `/`, `%`, `**`,`++`, `--`)
 
+```JavaScript
+const x = 5;
+const y = 10;
+```
 
+```JavaScript
+// Addition
+const sum = x + y;
+console.log(sum);
+```
+
+```JavaScript
+// Subtraction
+const sub = x - y;
+console.log(sub);
+```
+
+```JavaScript
+// Multiplication
+const multi = x * y;
+console.log(multi);
+```
+
+```JavaScript
+// division
+const divide = x / y;
+console.log(divide);
+```
+
+```JavaScript
+// modulus
+const module = x % y;
+console.log(module);
+```
+
+```JavaScript
+// Exponentiation
+const expo = 5 ** 2;
+console.log(expo)
+```
+
+```JavaScript
+// Increment
+let Increment_new = 5;
+let Increment = ++Increment_new;
+console.log(Increment);
+```
+
+```JavaScript
+// Decrement(--)
+let Decrement = --Increment_new;
+console.log(Decrement);
+```
+
+**Concatenation:**
+```JavaScript
+const load = "Tejas" + 7
+load;
+```
+
+**Unary Operators:(`++x`, `x++`, `--x`,`x--`):**
+
+<ul>
+    <li>`++x` and `x++` : increment one unit</li>
+    <li>`--x` and `x--` : decrement one unit</li>
+</ul>
+
+Increment with `x++`:
+```JavaScript
+let inn_value = 10;
+// One way:
+inn_value = inn_value + 1;
+console.log(inn_value);
+// Second way:
+inn_value++;
+console.log(inn_value);
+console.log(inn_value);
+console.log(inn_value);
+
+console.log(inn_value++);
+console.log(inn_value++);
+console.log(inn_value++);
+```
+
+Increment with `++x`:
+```JavaScript
+let value_pluse = 10;
+++value_pluse;
+console.log(value_pluse);
+console.log(value_pluse);
+console.log(value_pluse);
+
+console.log(++value_pluse);
+console.log(++value_pluse);
+console.log(++value_pluse);
+```
+
+Decrement with `x--`:
+
+```JavaScript
+let Decrement_value = 10;
+// One way:
+inn_value = Decrement_value + 1;
+console.log(Decrement_value);
+// Second way:
+inn_value++;
+console.log(Decrement_value);
+console.log(Decrement_value);
+console.log(Decrement_value);
+
+console.log(Decrement_value--);
+console.log(Decrement_value--);
+console.log(Decrement_value--);
+```
+
+Decrement with `--x`:
+
+```JavaScript
+let value_minus = 10;
+--value_minus;
+console.log(--value_minus);
+console.log(value_minus);
+console.log(value_minus);
+console.log(value_minus);
+console.log(value_minus);
+
+console.log(--value_minus);
+console.log(--value_minus);
+console.log(--value_minus);
+```
