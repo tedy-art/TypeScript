@@ -212,10 +212,10 @@ decimal;
 ```
 
 *3) Bigint* = 
-
-    * all JS numbers are stored in 64-bi floating-point format.
-
-    * JS bigint is a new datatype (ES2020) that can be used to store integer values that are too big be represented by a normal JS numbers.
+    <ul>
+        <li>all JS numbers are stored in 64-bi floating-point format.</li>
+        <li> JS bigint is a new datatype (ES2020) that can be used to store integer values that are too big be represented by a normal JS numbers.</li>
+    </ul>
 
 ```JavaScript
 let x = BigInt("123456789012345678901234567890");
