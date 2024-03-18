@@ -401,6 +401,7 @@ console.log(--value_minus);
 ```
 
 **Ways to coerce a value to a number**
+
 Means forcefully Change other data types in a number
 
 ```JavaScript
@@ -419,6 +420,7 @@ console.log(number2); //O/p: Not a Number/ NaN
 ```
 
 JS have some method which are used to coerce other types
+
 Way 2: parseInt() function/method
 ```JavaScript
 let number3 = "5ysc";
@@ -442,3 +444,4 @@ let string_to_decimal = parseFloat(number5);
 console.log(number5); //'555.21'
 console.log(string_to_decimal); //5
 ```
+
