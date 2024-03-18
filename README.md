@@ -399,3 +399,46 @@ console.log(--value_minus);
 console.log(--value_minus);
 console.log(--value_minus);
 ```
+
+**Ways to coerce a value to a number**
+Means forcefully Change other data types in a number
+
+```JavaScript
+//Way 1: using `+` sign:
+const str = "5";
+const number = +"5";
+console.log(typeof(number));
+console.log(number);
+```
+
+
+we can't do this
+```JavaScript
+let number2 = +"5abc";
+console.log(number2); //O/p: Not a Number/ NaN
+```
+
+JS have some method which are used to coerce other types
+Way 2: parseInt() function/method
+```JavaScript
+let number3 = "5ysc";
+let change_to_number = parseInt(number3);
+console.log(number3); //'5ysc'
+console.log(change_to_number); //5
+```
+
+if number is decimal we still get integer
+```JavaScript
+let number4 = "555.21";
+let decimal_to_number = parseInt(number4);
+console.log(number4); //555.21
+console.log(decimal_to_number); //555
+```
+
+coerce to decimal
+```JavaScript
+let number5 = "555.21";
+let string_to_decimal = parseFloat(number5);
+console.log(number5); //'555.21'
+console.log(string_to_decimal); //5
+```
