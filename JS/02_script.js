@@ -1,6 +1,6 @@
 /* var */
 var x = 5; // 'var' a variable declaration keyword 
-x = 10; // We can change x's value as we want
+x = 10; // We can change x's value as we want and its mutable
 x;
 
 /* let:  
