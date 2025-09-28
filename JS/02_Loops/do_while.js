@@ -11,7 +11,7 @@ do{
     console.log(num);
     num++;
 }
-while(num <= 5);
+while(num >= 5);
 
 let sum = 0
 do{

@@ -7,7 +7,7 @@
 * [X] Understand primitive data types (string, number, boolean, null, undefined, symbol, bigint)
 * [X] Practice operators (`+`, `-`, `*`, `/`, `%`, `===`, `==`, `!=`, `&&`, `||`)
 * [X] Write conditional statements (`if`, `else if`, `else`, `switch`)
-* [ ] Practice loops (`for`, `while`, `do...while`, `for...in`, `for...of`)
+* [X] Practice loops (`for`, `while`, `do...while`, `for...in`, `for...of`)
 
 ---
 
