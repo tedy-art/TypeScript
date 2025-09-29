@@ -13,11 +13,10 @@
 
 ### 🔹 2. Functions
 
-* [ ] Learn function declarations & expressions
-* [ ] Use arrow functions (`()=>{}`)
-* [ ] Work with parameters, arguments & return values
-* [ ] Practice default parameters
-* [ ] Understand higher-order functions (functions taking/returning functions)
+* [X] Use arrow functions (`()=>{}`)
+* [X] Work with parameters, arguments & return values
+* [X] Practice default parameters
+* [X] Understand higher-order functions (functions taking/returning functions)
 
 ---
 
