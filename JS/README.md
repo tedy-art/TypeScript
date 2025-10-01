@@ -20,7 +20,7 @@
 
 ---
 
-### 🔹 3. DOM & Events
+### 🔹 3. 
 
 * [ ] Select elements (`getElementById`, `querySelector`)
 * [ ] Modify content & attributes (`innerText`, `innerHTML`, `classList`)
