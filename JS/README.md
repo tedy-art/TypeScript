@@ -22,7 +22,7 @@
 
 ### 🔹 3. 
 
-* [ ] Select elements (`getElementById`, `querySelector`)
+* [X] Select elements (`getElementById`, `querySelector`)
 * [ ] Modify content & attributes (`innerText`, `innerHTML`, `classList`)
 * [ ] Add/remove event listeners (`addEventListener`)
 * [ ] Handle events (click, input, submit)
